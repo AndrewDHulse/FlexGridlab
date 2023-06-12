@@ -3,6 +3,45 @@
   }
 
   body {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     font-family: Helvetica;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 30px auto 100px;
+    grid-template-areas: 
+    "pc"
+    "nme"
+    "para"
+    "mn"
+    "ftr"
+    ;
   }
+
+#pfp {
+    grid-area: pc;
+    border-radius: 50%;
+    border-color: black;
+    height: 30%;
+    width: 30%;
+}
+
+h1{
+    grid-area: nme;
+
+}
+
+p{
+    grid-area: para;
+}
+
+main{
+    grid-area: mn; 
+}
+
+footer{
+    grid-area: ftr;
+}
